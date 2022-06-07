@@ -33,7 +33,7 @@
 
 <script setup>
 const route = useRoute();
-const seller = await $fetch('http://127.0.0.1:8000/api/seller/' + route.params.id).then(function (response) {
+const seller = await $fetch('http://127.0.0.1:8000/api/sellers/' + route.params.id).then(function (response) {
   return response.seller
 })
 </script>
