@@ -44,7 +44,8 @@ nav div {
 
 
 nav #beer_link,
-nav #cart_link {
+nav #cart_link,
+nav #seller_link {
     position: absolute;
     top: 110px;
     padding: 10px;
@@ -64,6 +65,10 @@ nav #beer_link {
 
 nav #cart_link {
     right: 35%;
+}
+
+nav #seller_link {
+    right: 20%;
 }
 
 
@@ -434,14 +439,14 @@ nav #cart_link:hover ~ .bubble12 {
 
 .beer-card .beer_name {
     text-align: center;
-    color: #FFF;
+    color: #FFFFFF;
     cursor: default;
 }
 
 .brewery {
     margin: 0 0 20px;
     padding: 10px;
-    color: #FFF;
+    color: #FFFFFF;
     font-weight: bold;
     align-self: center;
     background-color: #1fa858;
@@ -534,6 +539,53 @@ nav #cart_link:hover ~ .bubble12 {
 
 #cart_modal #empty_cart_message {
     margin: 35% 0;
+}
+
+.seller {
+    color: #FFFFFF;
+}
+
+.seller form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.seller input {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    width: 250px;
+    height: 20px;
+}
+
+.seller #submit_button {
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+#seller_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 23px;
+    background-color: #101010;
+    color: #FFFFFF;
+}
+
+
+.beer_item {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 
