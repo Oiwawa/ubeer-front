@@ -42,10 +42,13 @@
               <span class="nb_item"></span>
               <span class="more_item">+</span>
             </p>
-            <p class="beer_name">{{beer.price}} € </p>
           </div>
           <p class="beer_name">{{beer.name}}</p>
-          <p class="brewery">{{ beer.seller.name }}</p>
+          <p class="beer_name">{{beer.price}} € </p>
+          <NuxtLink :to="'/sellers/' + beer.seller.id" class="brewery">
+            <p >{{ beer.seller.name }}</p>
+          </NuxtLink>
+
         </div>
       </div>
     </div>

@@ -22,18 +22,18 @@
       </div>
     </nav>
     <div class="beer_item">
-      <h1>{{beer.name}}</h1>
-      <p>{{beer.description}}</p>
-      <p>Prix : <span>{{beer.price}} €</span></p>
-      <p>Degré d'alcool : <span>{{beer.abv}} %</span></p>
-      <p>Vendeur : <span>{{beer.seller.name}}</span></p>
+      <h1>{{seller.name}}</h1>
+      <h2>Contact</h2>
+      <p><span>{{seller.email}}</span></p>
+      <p>Téléphone : <span>{{seller.phone}}</span></p>
+      <p>Adresse : <span>{{seller.address}}, {{seller.zipcode}}, {{seller.city}}</span></p>
     </div>
   </div>
 </template>
 
 <script setup>
 const route = useRoute();
-const beer = await $fetch('http://127.0.0.1:8000/api/product/' + route.params.id).then(function (response) {
-  return response
+const seller = await $fetch('http://127.0.0.1:8000/api/seller/' + route.params.id).then(function (response) {
+  return response.seller
 })
 </script>

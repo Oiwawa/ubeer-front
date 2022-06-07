@@ -445,12 +445,13 @@ nav #cart_link:hover ~ .bubble12 {
 
 .brewery {
     margin: 0 0 20px;
-    padding: 10px;
+    padding: 0 20px;
     color: #FFFFFF;
     font-weight: bold;
     align-self: center;
     background-color: #1fa858;
     border-radius: 20px;
+    font-size: 13px;
 }
 
 
@@ -581,11 +582,20 @@ nav #cart_link:hover ~ .bubble12 {
 
 
 .beer_item {
-    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    width: 30%;
+    margin: 0 auto;
+    color: #FFFFFF;
 }
+
+.beer_item span {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+}
+
 
 
