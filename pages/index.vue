@@ -68,11 +68,11 @@
 </template>
 
 <script setup>
-const beers = await $fetch('http://127.0.0.1:8000/api/products').then(function(response) {
+const beers = await $fetch('https://ubeer-back-hr.herokuapp.com/api/products').then(function(response) {
   return response
 })
 
-const sellers = await $fetch('http://127.0.0.1:8000/api/sellers').then(function (response) {
+const sellers = await $fetch('https://ubeer-back-hr.herokuapp.com/api/sellers').then(function (response) {
   return response;
 })
 </script>

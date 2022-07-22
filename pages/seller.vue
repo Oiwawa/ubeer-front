@@ -60,7 +60,7 @@ async function addProduct() {
   formData.append('seller_name', seller_name.value)
   formData.append('icon', icon.value)
 
-  await $fetch('http://127.0.0.1:8000/api/products',
+  await $fetch('https://ubeer-back-hr.herokuapp.com/api/products',
       {
         method: 'POST',
         body: formData,

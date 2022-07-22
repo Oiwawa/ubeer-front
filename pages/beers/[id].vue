@@ -33,7 +33,7 @@
 
 <script setup>
 const route = useRoute();
-const beer = await $fetch('http://127.0.0.1:8000/api/products/' + route.params.id).then(function (response) {
+const beer = await $fetch('https://ubeer-back-hr.herokuapp.com/api/products/' + route.params.id).then(function (response) {
   return response
 })
 </script>
